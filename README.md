@@ -1,10 +1,10 @@
-# Playwright E2E - Auttra
+﻿# Playwright E2E - Auttra
 
 Testes end-to-end do site [auttra.com.br](https://auttra.com.br) com MS Playwright.
 
 ## GitHub Actions + SonarCloud
 
-[![Build and Tests](https://github.com/LucasGasparA/playwright/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/LucasGasparA/playwright/actions/workflows/node.js.yml)
+[![Build and Tests](https://github.com/LucasGasparA/playwright/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/LucasGasparA/playwright/actions/workflows/node.js.yml)
 
 </br>
 
