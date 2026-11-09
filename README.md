@@ -1,39 +1,36 @@
-# Playwright E2E
+# Playwright E2E - Auttra
+
+Testes end-to-end do site [auttra.com.br](https://auttra.com.br) com MS Playwright.
 
 ## GitHub Actions + SonarCloud
 
-[![Build and Tests](https://github.com/ugioni/playwright-e2e/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/ugioni/playwright-e2e/actions/workflows/node.js.yml)
+[![Build and Tests](https://github.com/LucasGasparA/playwright/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/LucasGasparA/playwright/actions/workflows/node.js.yml)
 
 </br>
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ugioni_playwright-e2e&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ugioni_playwright-e2e)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=LucasGasparA_playwright&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=LucasGasparA_playwright)
 
-## Getting Started
+## Cenários de teste
 
-In order to execute this project you must follow the steps below:
+1. Validar título e menu principal da home
+1. Acessar preços e alternar para o plano mensal
+1. Abrir pergunta do FAQ e validar a resposta
+1. Enviar formulário de teste grátis sem preencher os campos obrigatórios
 
-1. Install [Node JS](https://nodejs.org/) (version >= 22.x)
-1. Run `npm i --save-dev` to install all the project dependencies
-1. Run `npx playwright install` to install the browsers used by Playwright
-1. Run `npm run ci` to execute the entire test suite
-1. Run `npm run show-report` to visualize the reports
+## Como executar
 
-All execution artifacts can be found in `./artifacts`, if you want to remove these files run `npm run clean`.
+1. Instale o [Node JS](https://nodejs.org/) (versão >= 22.x)
+1. Rode `npm install` para instalar as dependências
+1. Rode `npx playwright install` para instalar os navegadores
+1. Rode `npm test` para executar os testes
+1. Rode `npm run show-report` para ver o relatório
 
-## Using ZeroStep AI
-</br>
+Os artefatos da execução ficam em `./artifacts`. Para apagá-los, rode `npm run clean`.
 
-To use the AI ​​feature with ZeroStep, you must create the `zerostep.config.json` file in the root of the project and add your ZeroStep token.
+## Estrutura do projeto
 
-## Project Structure
-</br>
-<ul>
-    <li>Scenarios: Test scenario mapping</li>
-    <li>Support: Project structure files
-        <ul>
-            <li>Elements: Mapping the elements of each screen</li>
-            <li>Fixtures: Data configuration files</li>
-            <li>Pages: Logic used to perform actions in tests</li>
-        </ul>
-    </li>
-</ul>
+- **Scenarios:** cenários de teste
+- **Support:** arquivos de apoio
+  - **Elements:** mapeamento dos elementos de cada tela
+  - **Fixtures:** arquivos de configuração e dados
+  - **Pages:** ações e validações usadas nos testes
